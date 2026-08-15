@@ -1,0 +1,46 @@
+/* Silvertree site-wide tweaks v3 (supersedes v2 — new filename: /assets/* cached immutable).
+   Adds large-screen scaling: wider container + fluid type on viewports >= 1280px. */
+
+/* 1) Consistent vertical rhythm (template default was 240/100 desktop, 80/40 small phones). */
+.section{padding-top:140px;padding-bottom:140px}
+@media screen and (max-width:991px){.section{padding-top:120px;padding-bottom:120px}}
+@media screen and (max-width:767px){.section{padding-top:100px;padding-bottom:100px}}
+@media screen and (max-width:479px){.section{padding-top:72px;padding-bottom:72px}}
+
+/* 2) Full-height photo heroes keep their original vertical balance. */
+.section.home-hero{padding-top:240px;padding-bottom:100px}
+@media screen and (min-width:768px) and (max-width:991px){.section.home-hero{padding-top:220px;padding-bottom:220px}}
+
+/* 3) Single-slide slider: hide arrows and dots. */
+.slider .w-slider-arrow-left,.slider .w-slider-arrow-right,.slider .w-slider-nav{display:none !important}
+
+/* 4) "Our Mission" images: equal height, bottom-aligned. */
+._2-column-grid.larger-right-column{align-items:end}
+.image.about{aspect-ratio:auto;height:440px}
+@media screen and (max-width:767px){.image.about{height:auto;aspect-ratio:4/3}}
+
+/* 5) Type hierarchy: page title > section title > subsection > body > label. */
+h3.display-2{font-size:40px;line-height:1.4em}
+@media screen and (max-width:991px){h3.display-2{font-size:32px}}
+@media screen and (max-width:767px){h3.display-2{font-size:28px}}
+@media screen and (max-width:479px){h3.display-2{font-size:24px}}
+.text-single-uppercase.medium{font-size:14px;font-weight:600;letter-spacing:.12em}
+
+/* 6) Large screens: use the width. Wider container + fluid type (template capped at 1268px / fixed px). */
+@media screen and (min-width:1280px){
+  .container-default{max-width:min(1560px,92vw)}
+  .header-logo{width:clamp(150px,11vw,200px)}
+  .nav-link{font-size:clamp(20px,1.45vw,25px)}
+  .display-1{font-size:clamp(80px,6.3vw,110px)}
+  .display-2{font-size:clamp(64px,5vw,88px)}
+  h3.display-2{font-size:clamp(40px,3vw,52px)}
+  .display-3{font-size:clamp(40px,3vw,52px)}
+  h1{font-size:clamp(64px,4.8vw,84px)}
+  h2{font-size:clamp(46px,3.4vw,60px)}
+  h3{font-size:clamp(28px,2.1vw,34px)}
+  body{font-size:clamp(18px,1.3vw,22px)}
+  .paragraph-large{font-size:clamp(22px,1.55vw,27px)}
+  .button-primary{font-size:clamp(24px,1.7vw,30px)}
+  .text-single-uppercase.medium{font-size:clamp(14px,1vw,16px)}
+  .image.about{height:clamp(440px,34vw,600px)}
+}
