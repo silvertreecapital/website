@@ -1,0 +1,62 @@
+/* Silvertree site-wide tweaks v5 (supersedes v4 — new filename: /assets/* cached immutable). */
+
+/* 1) Vertical rhythm — generous, symmetric. */
+.section{padding-top:140px;padding-bottom:140px}
+@media screen and (min-width:1280px){.section{padding-top:170px;padding-bottom:170px}}
+@media screen and (max-width:991px){.section{padding-top:120px;padding-bottom:120px}}
+@media screen and (max-width:767px){.section{padding-top:100px;padding-bottom:100px}}
+@media screen and (max-width:479px){.section{padding-top:72px;padding-bottom:72px}}
+
+/* 2) Full-height photo heroes keep their original vertical balance. */
+.section.home-hero{padding-top:240px;padding-bottom:100px}
+@media screen and (min-width:768px) and (max-width:991px){.section.home-hero{padding-top:220px;padding-bottom:220px}}
+
+/* 3) Single-slide slider: hide arrows and dots. */
+.slider .w-slider-arrow-left,.slider .w-slider-arrow-right,.slider .w-slider-nav{display:none !important}
+
+/* 4) "Our Mission" images: equal height, bottom-aligned, smaller so text leads. */
+._2-column-grid.larger-right-column{align-items:end}
+.image.about{aspect-ratio:auto;height:400px}
+@media screen and (max-width:767px){.image.about{height:auto;aspect-ratio:4/3}}
+
+/* 5) Type hierarchy: page title > section title > subsection > lead paragraph (heroes only) > body > label. */
+h3.display-2{font-size:40px;line-height:1.4em}
+@media screen and (max-width:991px){h3.display-2{font-size:32px}}
+@media screen and (max-width:767px){h3.display-2{font-size:28px}}
+@media screen and (max-width:479px){h3.display-2{font-size:24px}}
+.text-single-uppercase.medium{font-size:14px;font-weight:600;letter-spacing:.12em}
+
+/* 6) Large screens (>=1280px): wider container, fluid type (moderate scale). */
+@media screen and (min-width:1280px){
+  .container-default{max-width:min(1560px,92vw)}
+  ._2-column-grid{grid-column-gap:48px}
+  .header-logo{width:clamp(150px,10vw,180px)}
+  .nav-link{font-size:clamp(19px,1.3vw,22px)}
+  .display-1{font-size:clamp(76px,5.6vw,96px)}
+  .display-2{font-size:clamp(60px,4.4vw,76px)}
+  h3.display-2{font-size:clamp(38px,2.7vw,46px)}
+  .display-3{font-size:clamp(38px,2.7vw,46px)}
+  h1{font-size:clamp(60px,4.4vw,76px)}
+  h2{font-size:clamp(44px,3.1vw,54px)}
+  h3{font-size:clamp(27px,1.9vw,31px)}
+  body{font-size:clamp(18px,1.15vw,20px)}
+  .paragraph-large{font-size:clamp(21px,1.4vw,24px)}
+  .button-primary{font-size:clamp(23px,1.55vw,27px)}
+  .text-single-uppercase.medium{font-size:clamp(13px,.95vw,15px)}
+  .image.about{height:clamp(360px,26vw,460px)}
+  .paragraph-large.home-hero-paragraph{max-width:clamp(760px,55vw,920px)}
+}
+
+/* 7) No orphaned words. (Hero h1 excluded — it carries the inline underline.) */
+p,.paragraph-large,.contact-details-lines{text-wrap:pretty}
+h2,h3,h4,.display-2,.display-3{text-wrap:balance}
+
+/* 8) Hero underline: stable line under the heading on every page (was a glitchy width animation). */
+.inline.underline-bg{display:block !important;width:120px !important;height:3px;min-height:3px;background-color:#fff;opacity:1 !important;transform:none !important;margin-top:32px;margin-bottom:0;position:relative}
+
+/* 9) Footer: tighter and smaller. */
+.footer{font-size:16px}
+.footer-title{font-size:18px}
+.footer-grid.middle{padding-top:48px;padding-bottom:40px;grid-row-gap:32px}
+.footer-bottom-content{padding-top:28px;padding-bottom:28px}
+.footer .footer-logo{width:150px}
