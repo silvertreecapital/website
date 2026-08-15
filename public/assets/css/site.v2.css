@@ -1,0 +1,26 @@
+/* Silvertree site-wide tweaks v2 (supersedes v1 — new filename because /assets/* is cached immutable).
+   1) Consistent vertical rhythm (template default was 240/100 desktop, 80/40 small phones). */
+.section{padding-top:140px;padding-bottom:140px}
+@media screen and (max-width:991px){.section{padding-top:120px;padding-bottom:120px}}
+@media screen and (max-width:767px){.section{padding-top:100px;padding-bottom:100px}}
+@media screen and (max-width:479px){.section{padding-top:72px;padding-bottom:72px}}
+
+/* 2) Full-height photo heroes keep their original vertical balance (exempt from rule 1). */
+.section.home-hero{padding-top:240px;padding-bottom:100px}
+@media screen and (min-width:768px) and (max-width:991px){.section.home-hero{padding-top:220px;padding-bottom:220px}}
+
+/* 3) Single-slide slider: hide arrows and dots (only one office). */
+.slider .w-slider-arrow-left,.slider .w-slider-arrow-right,.slider .w-slider-nav{display:none !important}
+
+/* 4) "Our Mission" images: equal height, bottom-aligned. */
+._2-column-grid.larger-right-column{align-items:end}
+.image.about{aspect-ratio:auto;height:440px}
+@media screen and (max-width:767px){.image.about{height:auto;aspect-ratio:4/3}}
+
+/* 5) Type hierarchy: page title (80) > section title (64) > subsection (40) > body.
+      Demote h3 cards that reused the 64px section size; refine uppercase labels. */
+h3.display-2{font-size:40px;line-height:1.4em}
+@media screen and (max-width:991px){h3.display-2{font-size:32px}}
+@media screen and (max-width:767px){h3.display-2{font-size:28px}}
+@media screen and (max-width:479px){h3.display-2{font-size:24px}}
+.text-single-uppercase.medium{font-size:14px;font-weight:600;letter-spacing:.12em}
