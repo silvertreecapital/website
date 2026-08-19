@@ -81,14 +81,14 @@ h1,h2,h3,h4,.display-1,.display-2,.display-3{text-wrap:balance}
   background-position:50% 50%;background-repeat:no-repeat;background-size:cover}
 
 /* desktop / tablet (landscape masters) */
-[data-wf-page="663e1f1463702f4016083b86"] .section.home-hero{background-image:var(--hero-veil),url("/assets/images/hamburg-katharinen-hero-1920.jpg")}
+[data-wf-page="663e1f1463702f4016083b86"] .section.home-hero{background-image:var(--hero-veil),url("/assets/images/hamburg-aerial-1920.jpg")}
 [data-wf-page="6683fb91cc88e0a601b3f5f1"] .section.home-hero{background-image:var(--hero-veil),url("/assets/images/hamburg-speicherstadt-header-1920.jpg")}
 .section.about{background-image:var(--hero-veil),url("/assets/images/hamburg-alster-header-1920.jpg")}
 .section.bg---90vh.contact{background-image:var(--hero-veil),url("/assets/images/hamburg-alsterfontaene-header-1920.jpg")}
 
 /* phones (portrait crops, framed per photo) + equal full-screen height */
 @media screen and (max-width:767px){
-  [data-wf-page="663e1f1463702f4016083b86"] .section.home-hero{background-image:var(--hero-veil),url("/assets/images/hamburg-katharinen-m2.jpg")}
+  [data-wf-page="663e1f1463702f4016083b86"] .section.home-hero{background-image:var(--hero-veil),url("/assets/images/hamburg-aerial-m1.jpg")}
   [data-wf-page="6683fb91cc88e0a601b3f5f1"] .section.home-hero{background-image:var(--hero-veil),url("/assets/images/hamburg-speicherstadt-m2.jpg")}
   .section.about{background-image:var(--hero-veil),url("/assets/images/hamburg-alster-m2.jpg")}
   .section.bg---90vh.contact{background-image:var(--hero-veil),url("/assets/images/hamburg-alsterfontaene-m2.jpg")}
