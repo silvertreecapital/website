@@ -114,3 +114,13 @@ h1,h2,h3,h4,.display-1,.display-2,.display-3{text-wrap:balance}
 
 /* Contact: centre the Hamburg office card in the page (keeps 2-column layout) */
 .section.bg-neutral-100.mask .w-slider-mask{margin-left:auto;margin-right:auto}
+
+/* Home: Acquisition Profile section */
+.st-armed{opacity:0}
+.st-in{animation:stHeroIn .3s ease both}
+#acquisition-profile .acq-contact{margin-top:36px}
+#acquisition-profile .acq-contact h4{margin-bottom:8px}
+#acquisition-profile .acq-contact a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+#acquisition-profile .acq-pdf{margin-top:36px;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+#acquisition-profile .acq-pdf-link{color:var(--neutral-500);font-weight:600;font-size:18px}
+#acquisition-profile .acq-pdf-note{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--neutral-500)}
