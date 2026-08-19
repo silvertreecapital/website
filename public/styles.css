@@ -116,8 +116,7 @@ h1,h2,h3,h4,.display-1,.display-2,.display-3{text-wrap:balance}
 .section.bg-neutral-100.mask .w-slider-mask{margin-left:auto;margin-right:auto}
 
 /* Home: Acquisition Profile section */
-.st-armed{opacity:0}
-.st-in{animation:stHeroIn .3s ease both}
+.st-reveal{animation:stHeroIn .4s ease both}
 #acquisition-profile .acq-contact{margin-top:36px}
 #acquisition-profile .acq-contact h4{margin-bottom:8px}
 #acquisition-profile .acq-contact a{color:inherit;text-decoration:underline;text-underline-offset:3px}
