@@ -152,7 +152,7 @@ h1,h2,h3,h4,.display-1,.display-2,.display-3{text-wrap:balance}
 @media screen and (max-width:767px){
   .pf-grid{grid-template-columns:1fr;gap:14px}
   .pf-card{aspect-ratio:3/2}
-  .section.portfolio-hero{background-image:var(--hero-veil),url("/assets/images/portfolio-m1.jpg");
+  .section.portfolio-hero{background-image:var(--hero-veil),url("/assets/images/portfolio-m2.jpg");
     min-height:100vh !important;min-height:100svh !important;
     padding-top:120px !important;padding-bottom:80px !important;
     display:flex !important;flex-direction:column;justify-content:center !important;align-items:stretch !important}
