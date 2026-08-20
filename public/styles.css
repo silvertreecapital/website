@@ -123,3 +123,37 @@ h1,h2,h3,h4,.display-1,.display-2,.display-3{text-wrap:balance}
 #acquisition-profile .acq-pdf{margin-top:36px;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
 #acquisition-profile .acq-pdf-link{color:var(--neutral-500);font-weight:600;font-size:18px}
 #acquisition-profile .acq-pdf-note{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--neutral-500)}
+
+/* ---------- Portfolio page ---------- */
+.section.portfolio-hero{background-position:50% 50%;background-repeat:no-repeat;background-size:cover;
+  background-image:var(--hero-veil),url("/assets/images/portfolio-header-1920.jpg");
+  min-height:100vh;display:flex;align-items:center}
+.pf-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pf-card{position:relative;overflow:hidden;aspect-ratio:16/10;background:#0e141c;cursor:pointer;outline:none}
+.pf-card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s cubic-bezier(.2,.6,.2,1)}
+.pf-veil{position:absolute;inset:0;background:linear-gradient(rgba(8,10,14,.15) 0%,rgba(8,10,14,.28) 45%,rgba(8,10,14,.88) 100%);opacity:0;transition:opacity .35s ease;pointer-events:none}
+.pf-label{position:absolute;left:26px;right:26px;bottom:24px;color:#fff;opacity:0;transform:translateY(10px);transition:opacity .35s ease,transform .35s ease;pointer-events:none}
+.pf-city{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.85);margin-bottom:10px}
+.pf-street{font-size:26px;line-height:1.15;font-weight:600;text-wrap:balance}
+.pf-sub{font-size:15px;line-height:1.4;color:rgba(255,255,255,.8);margin-top:6px}
+@media (hover:hover){
+  .pf-card:hover .pf-veil,.pf-card:focus-visible .pf-veil{opacity:1}
+  .pf-card:hover .pf-label,.pf-card:focus-visible .pf-label{opacity:1;transform:none}
+  .pf-card:hover img{transform:scale(1.05)}
+}
+@media (hover:none){
+  .pf-veil,.pf-label{opacity:1;transform:none}
+  .pf-grid.pf-js .pf-veil,.pf-grid.pf-js .pf-label{opacity:0}
+  .pf-grid.pf-js .pf-label{transform:translateY(10px)}
+  .pf-grid.pf-js .pf-card.is-open .pf-veil{opacity:1}
+  .pf-grid.pf-js .pf-card.is-open .pf-label{opacity:1;transform:none}
+}
+@media screen and (max-width:991px){.pf-grid{grid-template-columns:repeat(2,1fr);gap:16px}.pf-street{font-size:22px}}
+@media screen and (max-width:767px){
+  .pf-grid{grid-template-columns:1fr;gap:14px}
+  .pf-card{aspect-ratio:3/2}
+  .section.portfolio-hero{background-image:var(--hero-veil),url("/assets/images/portfolio-m1.jpg");
+    min-height:100vh !important;min-height:100svh !important;
+    padding-top:120px !important;padding-bottom:80px !important;
+    display:flex !important;flex-direction:column;justify-content:center !important;align-items:stretch !important}
+}
