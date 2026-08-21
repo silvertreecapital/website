@@ -135,7 +135,7 @@ h1,h2,h3,h4,.display-1,.display-2,.display-3{text-wrap:balance}
 .pf-label{position:absolute;left:26px;right:26px;bottom:24px;color:#fff;opacity:0;transform:translateY(10px);transition:opacity .35s ease,transform .35s ease;pointer-events:none}
 .pf-city{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.85);margin-bottom:10px}
 .pf-street{font-size:26px;line-height:1.15;font-weight:600;text-wrap:balance}
-.pf-sub{font-size:15px;line-height:1.4;color:rgba(255,255,255,.8);margin-top:6px}
+.pf-sub{font-size:26px;line-height:1.15;font-weight:600;color:#fff;margin-top:4px;text-wrap:balance}
 @media (hover:hover){
   .pf-card:hover .pf-veil,.pf-card:focus-visible .pf-veil{opacity:1}
   .pf-card:hover .pf-label,.pf-card:focus-visible .pf-label{opacity:1;transform:none}
@@ -148,7 +148,8 @@ h1,h2,h3,h4,.display-1,.display-2,.display-3{text-wrap:balance}
   .pf-grid.pf-js .pf-card.is-open .pf-veil{opacity:1}
   .pf-grid.pf-js .pf-card.is-open .pf-label{opacity:1;transform:none}
 }
-@media screen and (max-width:991px){.pf-grid{grid-template-columns:repeat(2,1fr);gap:16px}.pf-street{font-size:22px}}
+@media screen and (max-width:991px){.pf-grid{grid-template-columns:repeat(2,1fr);gap:16px}.pf-street,.pf-sub{font-size:22px}}
+@media screen and (max-width:380px){.pf-street,.pf-sub{font-size:20px}}
 @media screen and (max-width:767px){
   .pf-grid{grid-template-columns:1fr;gap:14px}
   .pf-card{aspect-ratio:3/2}
