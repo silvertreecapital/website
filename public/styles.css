@@ -129,7 +129,7 @@ h1,h2,h3,h4,.display-1,.display-2,.display-3{text-wrap:balance}
   background-image:var(--hero-veil),url("/assets/images/portfolio-header-1920.jpg");
   min-height:100vh;display:flex;align-items:center}
 .pf-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.pf-card{position:relative;overflow:hidden;aspect-ratio:16/10;background:#0e141c;cursor:pointer;outline:none}
+.pf-card{position:relative;overflow:hidden;aspect-ratio:16/10;background:#0e141c;cursor:pointer;outline:none;container-type:inline-size}
 .pf-card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s cubic-bezier(.2,.6,.2,1)}
 .pf-veil{position:absolute;inset:0;background:linear-gradient(rgba(8,10,14,.15) 0%,rgba(8,10,14,.28) 45%,rgba(8,10,14,.88) 100%);opacity:0;transition:opacity .35s ease;pointer-events:none}
 .pf-label{position:absolute;left:26px;right:26px;bottom:24px;color:#fff;opacity:0;transform:translateY(10px);transition:opacity .35s ease,transform .35s ease;pointer-events:none}
@@ -158,3 +158,4 @@ h1,h2,h3,h4,.display-1,.display-2,.display-3{text-wrap:balance}
     padding-top:120px !important;padding-bottom:80px !important;
     display:flex !important;flex-direction:column;justify-content:center !important;align-items:stretch !important}
 }
+@supports (container-type:inline-size){.pf-street,.pf-sub{font-size:clamp(17px,6.3cqi,26px)}}
