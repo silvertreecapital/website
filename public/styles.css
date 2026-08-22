@@ -121,7 +121,8 @@ h1,h2,h3,h4,.display-1,.display-2,.display-3{text-wrap:balance}
 #acquisition-profile .acq-contact h4{margin-bottom:8px}
 #acquisition-profile .acq-contact a{color:inherit;text-decoration:underline;text-underline-offset:3px}
 #acquisition-profile .acq-pdf{margin-top:36px;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
-#acquisition-profile .acq-pdf-link{color:var(--neutral-500);font-weight:600;font-size:18px}
+#acquisition-profile .acq-pdf-link{color:var(--neutral-800);font-weight:600;font-size:18px;text-decoration:none;border-bottom:2px solid var(--neutral-400);padding-bottom:3px;transition:border-color .25s ease,color .25s ease}
+#acquisition-profile .acq-pdf-link:hover{color:var(--primary-1);border-bottom-color:var(--primary-1)}
 #acquisition-profile .acq-pdf-note{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--neutral-500)}
 
 /* ---------- Portfolio page ---------- */
