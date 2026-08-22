@@ -169,3 +169,8 @@ h1,h2,h3,h4,.display-1,.display-2,.display-3{text-wrap:balance}
 #acquisition-profile .acq-eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--neutral-500);margin-bottom:10px}
 #acquisition-profile .acq-arrow{text-decoration:none;display:inline-block;margin-left:10px;transition:transform .25s ease}
 #acquisition-profile .acq-pdf-link:hover .acq-arrow{transform:translateX(4px)}
+
+/* Footer: drop the "Pages" label, centre the links with the left block, tighten the gap above the rule */
+.footer .footer-title{display:none}
+.footer .footer-grid.middle{align-items:center;padding-bottom:0}
+@media screen and (max-width:767px){.footer .footer-grid.middle{padding-bottom:32px}}
