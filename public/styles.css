@@ -163,3 +163,10 @@ h1,h2,h3,h4,.display-1,.display-2,.display-3{text-wrap:balance}
 #acquisition-profile .acq-mail{margin-top:10px;font-size:20px;font-weight:600}
 #acquisition-profile .acq-mail a{color:var(--neutral-800);text-decoration:none;border-bottom:2px solid var(--neutral-400);padding-bottom:3px;transition:border-color .25s ease,color .25s ease}
 #acquisition-profile .acq-mail a:hover{color:var(--primary-1);border-bottom-color:var(--primary-1)}
+
+/* About: Our Mission — align the intro text with the heading, keep the two photos on one line */
+.section ._2-column-grid.larger-right-column{align-items:stretch}
+.section ._2-column-grid.larger-right-column > div{display:flex;flex-direction:column}
+.section ._2-column-grid.larger-right-column > div > img.image{margin-top:auto}
+.section ._2-column-grid.larger-right-column p.mg-bottom-large-72px{margin-bottom:48px}
+@media screen and (min-width:768px){.section ._2-column-grid.larger-right-column > .inner-container-650px{padding-top:35px}}
