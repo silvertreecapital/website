@@ -167,3 +167,5 @@ h1,h2,h3,h4,.display-1,.display-2,.display-3{text-wrap:balance}
 .section ._2-column-grid.larger-right-column p.mg-bottom-large-72px{margin-bottom:48px}
 @media screen and (min-width:768px){.section ._2-column-grid.larger-right-column > .inner-container-650px{padding-top:35px}}
 #acquisition-profile .acq-eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--neutral-500);margin-bottom:10px}
+#acquisition-profile .acq-arrow{text-decoration:none;display:inline-block;margin-left:10px;transition:transform .25s ease}
+#acquisition-profile .acq-pdf-link:hover .acq-arrow{transform:translateX(4px)}
