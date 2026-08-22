@@ -160,9 +160,6 @@ h1,h2,h3,h4,.display-1,.display-2,.display-3{text-wrap:balance}
     display:flex !important;flex-direction:column;justify-content:center !important;align-items:stretch !important}
 }
 @supports (container-type:inline-size){.pf-street,.pf-sub{font-size:clamp(17px,6.3cqi,26px)}}
-#acquisition-profile .acq-mail{margin-top:10px;font-size:20px;font-weight:600}
-#acquisition-profile .acq-mail a{color:var(--neutral-800);text-decoration:none;border-bottom:2px solid var(--neutral-400);padding-bottom:3px;transition:border-color .25s ease,color .25s ease}
-#acquisition-profile .acq-mail a:hover{color:var(--primary-1);border-bottom-color:var(--primary-1)}
 
 /* About: Our Mission — align the intro text with the heading, keep the two photos on one line */
 .section ._2-column-grid.larger-right-column{align-items:stretch}
@@ -170,3 +167,4 @@ h1,h2,h3,h4,.display-1,.display-2,.display-3{text-wrap:balance}
 .section ._2-column-grid.larger-right-column > div > img.image{margin-top:auto}
 .section ._2-column-grid.larger-right-column p.mg-bottom-large-72px{margin-bottom:48px}
 @media screen and (min-width:768px){.section ._2-column-grid.larger-right-column > .inner-container-650px{padding-top:35px}}
+#acquisition-profile .acq-eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--neutral-500);margin-bottom:10px}
