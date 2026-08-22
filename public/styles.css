@@ -174,3 +174,11 @@ h1,h2,h3,h4,.display-1,.display-2,.display-3{text-wrap:balance}
 .footer .footer-title{display:none}
 .footer .footer-grid.middle{align-items:center;padding-bottom:0}
 @media screen and (max-width:767px){.footer .footer-grid.middle{padding-bottom:32px}}
+
+/* Heroes: anchor every page's headline at the same height (desktop/tablet) */
+@media screen and (min-width:768px){
+  .section.home-hero,.section.portfolio-hero,.section.about,.section.bg---90vh.contact{
+    align-items:flex-start !important;justify-content:flex-start !important;
+    padding-top:clamp(200px,33vh,320px) !important}
+}
+.section.bg---90vh.contact .contact-anim-line{margin-bottom:24px}
